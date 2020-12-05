@@ -2,6 +2,11 @@ package JavaProject;
 import java.util.Scanner;
 
 public class Project {
+	static void Guide() {		
+		System.out.println("Gudie if you want to learn about any language enter the number of the language");
+		System.out.println(" Java=0 "+" Python=1 "+" C++=2 "+" SQL=3");
+		System.out.print("Enter the number of the language: ");		
+	}
 	 static void Arrays() {
 		Scanner reader = new Scanner(System.in);
 		int Lang;
@@ -15,36 +20,41 @@ public class Project {
 			 for (int i=0 ; i<Java.length; i++) {
 			 System.out.print(Elment[i]);
 			 System.out.println(Java[i]);
+			 System.out.println();
 			 } 		     }
 		 else if(Lang == 1) {
 			 for (int i=0 ; i<Python.length; i++) {
 				 System.out.print(Elment[i]);
 				 System.out.println(Python[i]);
+				 System.out.println();
 				 } 	
 		 }
 		 else if(Lang == 2) {
 			 for (int i=0 ; i<CPlusPlus.length; i++) {
 				 System.out.print(Elment[i]);
 				 System.out.println(CPlusPlus[i]);
+				 System.out.println();
 				 } 	
 		 }
 		 else if(Lang == 3) {
 			 for (int i=0 ; i<SQL.length; i++) {
 				 System.out.print(Elment[i]);
 				 System.out.println(SQL[i]);
+				 System.out.println();
 				 } 	
 		 }
 		 
-		 
+		 else 
+			 System.out.println("Wrong Number!!");
+		     System.out.println();
 			 }
 			 
 		 
 	public static void main(String[] args) {
-		System.out.println("Gudie if you want to learn about any language enter the number of the language");
-		System.out.println(" Java=0 "+" Python=1 "+" C++=2 "+" SQL=3");
-		System.out.print("Enter the number of the language: ");
+		for (int i=0; i <99 ; i++) {
+		Guide();
 		Arrays();
-		
+		}
 	}
 
 }
