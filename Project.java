@@ -43,11 +43,11 @@ public class Project {
 				 System.out.println();
 				 } 	
 		 }
-		 
-		 else 
+		 else {
 			 System.out.println("Wrong Number!!");
 		     System.out.println();
 			 }
+}
 			 
 		 
 	public static void main(String[] args) {
